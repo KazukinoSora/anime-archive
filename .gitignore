@@ -1,0 +1,113 @@
+# =============================================================================
+# .gitignore
+# 上传本地项目前，在这里声明“不需要进入 Git”的文件和目录。
+#
+# 语法速记：
+#   /xxx   只匹配仓库根目录下的 xxx
+#   xxx/   只匹配目录
+#   *.log  匹配任意层级的 .log 文件
+#   !xxx   例外：重新包含被前面规则忽略的文件
+#
+# 下面按类别整理。不适用的规则可以直接删除，或者在该行前面加 # 注释掉。
+# =============================================================================
+
+# ---- 依赖 / 第三方包（体积大，可以重新安装，不要提交）---------------------
+node_modules/
+bower_components/
+jspm_packages/
+.pnpm-store/
+.yarn/cache/
+vendor/
+Pods/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+.tox/
+.gradle/
+
+# ---- 构建产物 / 编译结果（可以由源码重新生成）-----------------------------
+dist/
+build/
+out/
+target/
+bin/
+obj/
+.next/
+.nuxt/
+.svelte-kit/
+coverage/
+*.class
+*.jar
+*.war
+*.tsbuildinfo
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# ---- 日志、缓存与临时文件 --------------------------------------------------
+*.log
+logs/
+.cache/
+.temp/
+tmp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.eslintcache
+.stylelintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- 环境变量与密钥（非常重要：真实密钥不要上传）---------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+credentials.*
+
+# ---- IDE / 编辑器 / 操作系统文件 -------------------------------------------
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 大体积归档、磁盘镜像与音视频（按需保留；确有需要请改用 Git LFS）-------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.iso
+*.dmg
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mp3
+*.flac
+*.wav
+*.m4a
+*.ogg
